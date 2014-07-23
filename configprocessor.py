@@ -43,6 +43,8 @@ def getClosestSection(selectedConfig, sections):
 def writeConfig(config, outputPath, configName):
     outputFile = open(outputPath, 'w')
 
+    configName = configName.replace("/", "_")
+
     outputFile.write("/* This file was generated automatically. DO NOT MODIFY IT */\n")
     outputFile.write("#ifndef __CONFIG_%s__\n" % configName)
     outputFile.write("#define __CONFIG_%s__\n" % configName)

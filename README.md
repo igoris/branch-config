@@ -31,8 +31,8 @@ this command will generate file ```test.h``` with the following contents:
 
 ```
 /* This file was generated automatically. DO NOT MODIFY IT */
-#ifndef __CONFIG_feature/test__
-#define __CONFIG_feature/test__
+#ifndef __CONFIG_feature_test__
+#define __CONFIG_feature_test__
 #define API_KEY @"33333"
 #define SECRET @"33333"
 #endif
