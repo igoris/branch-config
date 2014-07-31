@@ -13,7 +13,7 @@ def main():
     args = parser.parse_args()
 
     branch = getCurrentBranch(args.path)
-    configprocessor.run(args.configfile, args.outputfile, branch)
+    configprocessor.run(args.configfile, args.outputfile, str(branch))
 
 def getCurrentBranch(path):
     repo = Repo(path)
